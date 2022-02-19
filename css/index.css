@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* 共通部分 */
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #e60033;
+}
+h2 {
+  display: flex;
+  font-size: 2rem;
+}
+h2::before,
+h2::after {
+  flex: 1;
+  height: 2px;
+  content: '';
+  background-color: #000;
+  position: relative;
+  top: 2rem;
+}
+h2::before {
+  margin-right: 1rem;
+}
+h2::after {
+  margin-left: 1rem;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* TOP page */
+.main {
+  text-align: center;
+}
+.title-box {
+  width: 50%;
+  margin: 2.5rem auto 0;
+  background: url("../images/f1189_6.png") no-repeat center/cover;
+  object-fit: cover;
+  height: 29em;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  padding-top: 27%;
+  text-align: center;
+}
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+.text {
+  font-size: 18px;
+}
+
+/* Profile */
+.profile-thumb {
+  display: flex;
+}
+.img-profile-1 {
+  float: left;
+  text-align: left;
+  margin:0 8% 0;
+  height: fit-content;
+}
+.img-profile-1 img {
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 40%;
+  display: flex;
+}
+.name {
+  font-size: 30px;
+  font-weight: bold;
+}
+.profile {
+  width: 55%;
+}
+dt {
+  float: left;
+}
+dd {
+  margin-left: 100px;
+}
+/* Love */
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 6% 9% 50px;
+}
+.item {
+  padding: 0 1rem;
+}
+.item img{
+  width: 300px;
+  height: auto;
+  justify-content: center;
+}
+.comment {
+  text-align: center;
+}
+/* dream list */
+ol {
+  list-style: none;
+  margin-left: 28%;
+}
+ol li {
+  counter-increment: list;
+  margin-bottom: 0.25rem;
+  line-height: 2.5;
+}
+ol li::before {
+  content: counter(list);
+  background: #fff799;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 1.75;
+  text-align: center;
+  display: inline-block;
+  margin-right: 0.25rem;
+  vertical-align: baseline;
+}
+li {
+  font-size: 30px;
+}
